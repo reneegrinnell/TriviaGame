@@ -18,104 +18,114 @@
 </head>
 <body>
     <h1>Captain Janeway's Trivia Game</h1>
+        <div id="startView">
+            <p>
+                Starfleet Captain Kathryn Janeway of the Federation Starship Voyager I have reset 
+                the sensors to scan for frequencies outside the usual range. By emitting harmonic 
+                vibrations to shatter the lattices. We will monitor and adjust the frequency of 
+                the resonators. He has this ability of instantly interpreting and extrapolating any
+                verbal communication he hears. It may be due to the envelope over the structure, 
+                causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular 
+                integrity of that bubble against our phasers.   
+            </p>
 
-    <p>Starfleet Captain Kathryn Janeway of the Federation Starship Voyager I have reset 
-        the sensors to scan for frequencies outside the usual range. By emitting harmonic 
-        vibrations to shatter the lattices. We will monitor and adjust the frequency of 
-        the resonators. He has this ability of instantly interpreting and extrapolating any
-         verbal communication he hears. It may be due to the envelope over the structure, 
-         causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular 
-         integrity of that bubble against our phasers.   
-    </p>
+            <button type="button" onclick="startFunction()">START</button>
+        </div>
 
-    <p><h6>1. Let's start with a softball. Who is the most unequivocally awesome Starfleet 
-        captain?</h6>
-        <form action="" method="post">
-          <input type="radio" name="one" value="picard" /> Jean-Luc Picard <br>
-          <input type="radio" name="one" value="kirk" /> William Kirk <br>
-          <input type="radio" name="one" value="janeway" /> Kathryn Janeway <br>
-          <input type="radio" name="one" value="archer" /> Jonathan Archer <br>
-          <input type="radio" name="one" value="sisko" /> Benjamin Sisko <br>
-        </form>
-    </p>
+        <div id="gameView">
+            <p>
+                Time Remaining: <div id="display">90</div> seconds
+            </p>
 
-    <p><h6>2. Captain Kathryn Janeway was born on Earth, in which of the United States?</h6>
-        <form action="" method="post">
-            <input type="radio" name="two" value="iowa" /> Iowa <br>
-            <input type="radio" name="two" value="indiana" /> Indiana <br>
-            <input type="radio" name="two" value="illinois" /> Illinois <br>
-            <input type="radio" name="two" value="idaho" /> Idaho <br>
-        </form>
-    </p>
+            <p><h6>1. Let's start with a softball. Who is the most unequivocally awesome Starfleet 
+                captain?</h6>
+                <form action="" method="post">
+                <input type="radio" name="one" value="picard" /> Jean-Luc Picard <br>
+                <input type="radio" name="one" value="kirk" /> William Kirk <br>
+                <input type="radio" name="one" value="janeway" /> Kathryn Janeway <br>
+                <input type="radio" name="one" value="archer" /> Jonathan Archer <br>
+                <input type="radio" name="one" value="sisko" /> Benjamin Sisko <br>
+                </form>
+            </p>
 
-    <p><h6>3. Janeway's favorite beverage is:</h6>
-        <form action="" method="post">
-            <input type="radio" name="three" value="coffee" /> Coffee <br>
-            <input type="radio" name="three" value="tea" /> Tea, Earl Grey, hot <br>
-            <input type="radio" name="three" value="pinot" /> Pinot Grigio <br>
-            <input type="radio" name="three" value="bloodwine" /> Klingon bloodwine <br>
-        </form>
-    </p>
+            <p><h6>2. Captain Kathryn Janeway was born on Earth, in which of the United States?</h6>
+                <form action="" method="post">
+                    <input type="radio" name="two" value="iowa" /> Iowa <br>
+                    <input type="radio" name="two" value="indiana" /> Indiana <br>
+                    <input type="radio" name="two" value="illinois" /> Illinois <br>
+                    <input type="radio" name="two" value="idaho" /> Idaho <br>
+                </form>
+            </p>
 
-    <p><h6>4. Janeway had a dog on Earth when she was assigned to Voyager. What was its 
-        breed and name?</h6>
-        <form action="" method="post">
-            <input type="radio" name="four" value="golden" /> A Golden Retriever, Sam<br>
-            <input type="radio" name="four" value="lab" /> A Labrador Retriever, Charlie <br>
-            <input type="radio" name="four" value="greyhound" /> A Greyhound, Lucy <br>
-            <input type="radio" name="four" value="setter" /> An Irish Setter, Molly <br>
-        </form>
-    </p>
+            <p><h6>3. Janeway's favorite beverage is:</h6>
+                <form action="" method="post">
+                    <input type="radio" name="three" value="coffee" /> Black Coffee <br>
+                    <input type="radio" name="three" value="tea" /> Tea, Earl Grey, hot <br>
+                    <input type="radio" name="three" value="pinot" /> Pinot Grigio <br>
+                    <input type="radio" name="three" value="bloodwine" /> Klingon bloodwine <br>
+                </form>
+            </p>
 
-    <p><h6>5. With which enemy group did Janeway form an alliance against Species 8472?</h6>
-        <form action="" method="post">
-            <input type="radio" name="five" value="vidiians" /> Vidiians<br>
-            <input type="radio" name="five" value="romulans" /> Romulans<br>
-            <input type="radio" name="five" value="theborg" /> The Borg <br>
-            <input type="radio" name="five" value="talaxians" /> Talaxians<br>
-        </form>
-    </p>
+            <p><h6>4. Janeway had a dog on Earth when she was assigned to Voyager. What was its 
+                breed and name?</h6>
+                <form action="" method="post">
+                    <input type="radio" name="four" value="golden" /> A Golden Retriever, Sam<br>
+                    <input type="radio" name="four" value="lab" /> A Labrador Retriever, Charlie <br>
+                    <input type="radio" name="four" value="greyhound" /> A Greyhound, Lucy <br>
+                    <input type="radio" name="four" value="setter" /> An Irish Setter, Molly <br>
+                </form>
+            </p>
 
-    <p><h6>6. Janeway once advised Naomi Wildman that there are three things to remember
-        about being a starship captain. Which of the four options below is NOT one of them?</h6>
-        <form action="" method="post">
-            <input type="radio" name="six" value="shirt" /> Keep your shirt tucked in<br>
-            <input type="radio" name="six" value="ship" /> Go down with the ship<br>
-            <input type="radio" name="six" value="nose" /> Keep your nose clean<br>
-            <input type="radio" name="six" value="crew" /> Never abandon a member of your crew<br>
-        </form>
-    </p>
+            <p><h6>5. With which enemy group did Janeway form an alliance against Species 8472?</h6>
+                <form action="" method="post">
+                    <input type="radio" name="five" value="vidiians" /> Vidiians<br>
+                    <input type="radio" name="five" value="romulans" /> Romulans<br>
+                    <input type="radio" name="five" value="theborg" /> The Borg <br>
+                    <input type="radio" name="five" value="talaxians" /> Talaxians<br>
+                </form>
+            </p>
 
-    <p><h6>7. When Janeway was stranded on New Earth with Commander Chakotay, what did
-        he build for her?</h6>
-        <form action="" method="post">
-            <input type="radio" name="seven" value="table" /> A dining table<br>
-            <input type="radio" name="seven" value="tub" /> A bathtub<br>
-            <input type="radio" name="seven" value="canoe" /> A canoe<br>
-            <input type="radio" name="seven" value="labspace" /> A laboratory space<br>
-        </form>
-    </p>
+            <p><h6>6. Janeway once advised Naomi Wildman that there are three things to remember
+                about being a starship captain. Which of the four options below is NOT one of them?</h6>
+                <form action="" method="post">
+                    <input type="radio" name="six" value="shirt" /> Keep your shirt tucked in<br>
+                    <input type="radio" name="six" value="ship" /> Go down with the ship<br>
+                    <input type="radio" name="six" value="nose" /> Keep your nose clean<br>
+                    <input type="radio" name="six" value="crew" /> Never abandon a member of your crew<br>
+                </form>
+            </p>
 
-    <p><h6>8. On the Voyager holodeck, which historical figure allows Janeway to become
-        his apprentice?</h6>
-        <form action="" method="post">
-            <input type="radio" name="eight" value="davinci" /> Leonardo da Vinci<br>
-            <input type="radio" name="eight" value="galileo" /> Galileo Galilei<br>
-            <input type="radio" name="eight" value="kepler" /> Johannes Kepler<br>
-            <input type="radio" name="eight" value="einstein" /> Albert Einstein<br>
-        </form>
-    </p>
+            <p><h6>7. When Janeway was stranded on New Earth with Commander Chakotay, what did
+                he build for her?</h6>
+                <form action="" method="post">
+                    <input type="radio" name="seven" value="table" /> A dining table<br>
+                    <input type="radio" name="seven" value="tub" /> A bathtub<br>
+                    <input type="radio" name="seven" value="canoe" /> A canoe<br>
+                    <input type="radio" name="seven" value="labspace" /> A laboratory space<br>
+                </form>
+            </p>
 
-    <p><h6>9. In one episode of Star Trek: Voyager, Janeway gets to meet one of her 
-        twentieth-century heroes, who has (oddly and conveniently) been abducted and kept 
-        alive by aliens. Who is the hero?</h6>
-        <form action="" method="post">
-            <input type="radio" name="nine" value="isaac" /> Isaac Asimov<br>
-            <input type="radio" name="nine" value="alan" /> Alan Turing<br>
-            <input type="radio" name="nine" value="charles" /> Charles Lindbergh<br>
-            <input type="radio" name="nine" value="amelia" /> Amelia Earhart<br>
-        </form>
-    </p>
+            <p><h6>8. On the Voyager holodeck, which historical figure allows Janeway to become
+                his apprentice?</h6>
+                <form action="" method="post">
+                    <input type="radio" name="eight" value="davinci" /> Leonardo da Vinci<br>
+                    <input type="radio" name="eight" value="galileo" /> Galileo Galilei<br>
+                    <input type="radio" name="eight" value="kepler" /> Johannes Kepler<br>
+                    <input type="radio" name="eight" value="einstein" /> Albert Einstein<br>
+                </form>
+            </p>
+
+            <p><h6>9. In one episode of Star Trek: Voyager, Janeway gets to meet one of her 
+                twentieth-century heroes, who has (oddly and conveniently) been abducted and kept 
+                alive by aliens. Who is the hero?</h6>
+                <form action="" method="post">
+                    <input type="radio" name="nine" value="isaac" /> Isaac Asimov<br>
+                    <input type="radio" name="nine" value="alan" /> Alan Turing<br>
+                    <input type="radio" name="nine" value="charles" /> Charles Lindbergh<br>
+                    <input type="radio" name="nine" value="amelia" /> Amelia Earhart<br>
+                </form>
+            </p>
+        </div>
     
      <!-- Links to jQuery Library, game JS file -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
