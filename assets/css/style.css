@@ -1,0 +1,21 @@
+body {
+	background-image: url("../images/voyager.jpg");
+	color: #D3E9F8;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	padding: 50px;
+}
+
+#choiceButton {
+	padding: 5px;
+	margin: 5px;
+	
+button {
+		padding: 5px;
+		margin-left: 40px;
+		color: black;
+}
+
+.checkbox{
+padding: 5px;
+}
