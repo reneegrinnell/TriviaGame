@@ -51,9 +51,7 @@ $(document).on('click', '#done', function () {
     game.done();
 });
 
-// =================================================
-
-// variable game holding the count of correct and incorrect, and the countdown function
+// Game var holding correct, incorrect counts, and countdown fn
 var game = {
     correct: 0,
     incorrect: 0,
@@ -67,10 +65,15 @@ var game = {
             game.done();
         }
     },
-    // start function removes the start button and adds the countdown and questions and answers
+    // Fn to remove start button, add Q/A and countdown
     start: function () {
-        // delays the counter by one second
+        
         document.getElementById('play').style.display = 'none';
+
+        var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "assets/audio/VoyagerOpeningCredits.mp3");
+
+        audioElement.play();
 
         timer = setInterval(game.countdown, 1000);
 
@@ -81,14 +84,16 @@ var game = {
         for (var i = 0; i < questionAnswers.length; i++) {
             panel.append('<h2>' + questionAnswers[i].question + '</h2>');
             for (var j = 0; j < questionAnswers[i].choices.length; j++) {
-                panel.append('<p><input type="radio" name="question' + '-' + i + '" value="' + questionAnswers[i].choices[j] + '">' + "     " + questionAnswers[i].choices[j] + "</p>");
+                panel.append('<p><input type="radio" name="question' + '-' + i + 
+                '" value="' + questionAnswers[i].choices[j] + '">' + "     " + 
+                questionAnswers[i].choices[j] + "</p>");
             }
         }
 
         panel.append('<button class="btn-primary" id="done">Done</button>');
     },
 
-    // done function checks if the checked input is equal to the correct answer. 
+    // Fn to determine correctness of answers 
     done: function () {
 
         $.each($("input[name='question-0']:checked"), function () {
@@ -127,45 +132,45 @@ var game = {
             }
         });
         $.each($("input[name='question-5']:checked"), function () {
-            if ($(this).val() == questionAnswers[4].rightAnswer) {
+            if ($(this).val() == questionAnswers[5].rightAnswer) {
                 game.correct++;
             } else {
                 game.incorrect++;
             }
         });
         $.each($("input[name='question-6']:checked"), function () {
-            if ($(this).val() == questionAnswers[4].rightAnswer) {
+            if ($(this).val() == questionAnswers[6].rightAnswer) {
                 game.correct++;
             } else {
                 game.incorrect++;
             }
         });
         $.each($("input[name='question-7']:checked"), function () {
-            if ($(this).val() == questionAnswers[4].rightAnswer) {
+            if ($(this).val() == questionAnswers[7].rightAnswer) {
                 game.correct++;
             } else {
                 game.incorrect++;
             }
         });
         $.each($("input[name='question-8']:checked"), function () {
-            if ($(this).val() == questionAnswers[4].rightAnswer) {
+            if ($(this).val() == questionAnswers[8].rightAnswer) {
                 game.correct++;
             } else {
                 game.incorrect++;
             }
         });
 
-        // runs result function inside the done function
+        // Runs result fn inside done fn
         this.result();
     },
-    // result function stops timer, removes the timer from htm, and prints to the html results!
+    // Fn to stop timer, remove timer from html, print results to html!
     result: function () {
 
         clearInterval(timer);
         document.getElementById('play').style.display = 'block';
 
         $('#subwrapper h2').remove();
-        panel.html('<h2>Time is Up!</h2>');
+        panel.html('<h2>Your Time is Up!</h2>');
         panel.append('<h3>Correct Answers: ' + this.correct + '</h3>');
         panel.append('<h3>Incorrect Answers: ' + this.incorrect + '</h3>');
         panel.append('<h3>Unanswered: ' + (questionAnswers.length - (this.incorrect + this.correct)) + '</h3>');
