@@ -9,9 +9,9 @@ The post-game screen displays your correct and incorrect guess totals (and unans
 totals, if relevant).
 
 # Technologies Used
-HTML
-CSS/Bootstrap
-JavaScript/jQuery
+* HTML
+* CSS/Bootstrap
+* JavaScript/jQuery
 
 # Credits
 * All audio obtained from http://trekcore.com/audio/
